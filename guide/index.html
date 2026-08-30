@@ -44,6 +44,20 @@
   @media (max-width:480px){
     body{font-size:16px} h1{font-size:28px} h2{font-size:20px} .wrap{padding:40px 20px 72px}
   }
+  /* Print / PDF: keep sections whole and don't strand a heading at a page foot. */
+  @media print{
+    body{font-size:11pt}
+    .wrap{max-width:none;padding:0}
+    .accent-bar{display:none}
+    a{color:var(--ink);text-decoration:none}
+    h1{font-size:24pt} h2{font-size:14pt;border-top:none;padding-top:0;margin-top:22pt}
+    h2,h3{break-after:avoid-page;page-break-after:avoid}
+    table,pre,blockquote,ul,ol{break-inside:avoid-page;page-break-inside:avoid}
+    table{display:table}
+    tr,li{break-inside:avoid}
+    hr{display:none}
+    .toc-print{display:none}
+  }
 </style>
 </head>
 <body>
