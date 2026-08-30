@@ -1,0 +1,344 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Aislely — User Guide</title>
+<meta name="description" content="How to use Aislely: aisle-order shopping lists, the in-shop running total, voice, loyalty cards and purchase history.">
+<style>
+  :root {
+    --bg:#ffffff; --panel:#f2f6f3; --ink:#1b2721; --muted:#58655d;
+    --accent:#3f7d5c; --hair:#e1e8e3; --measure:760px;
+  }
+  *{box-sizing:border-box}
+  html{-webkit-text-size-adjust:100%; scroll-behavior:smooth}
+  body{margin:0;background:var(--bg);color:var(--ink);
+    font-family:-apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    font-size:17px;line-height:1.65;-webkit-font-smoothing:antialiased}
+  .accent-bar{height:4px;background:var(--accent)}
+  .wrap{max-width:var(--measure);margin:0 auto;padding:56px 24px 96px}
+  header{margin-bottom:32px}
+  .mark{font-size:15px;font-weight:600;letter-spacing:.14em;text-transform:uppercase;
+    color:var(--accent);margin:0 0 18px}
+  h1{font-size:34px;line-height:1.15;letter-spacing:-.02em;font-weight:700;margin:0 0 10px}
+  .lede{color:var(--muted);margin:0}
+  h2{font-size:22px;letter-spacing:-.01em;font-weight:650;margin:44px 0 12px;
+    padding-top:22px;border-top:1px solid var(--hair);scroll-margin-top:16px}
+  h3{font-size:17px;font-weight:650;margin:28px 0 8px}
+  p{margin:0 0 16px}
+  ul,ol{margin:0 0 16px;padding-left:22px}
+  li{margin:0 0 8px}
+  a{color:var(--accent)}
+  code{background:var(--panel);padding:.1rem .35rem;border-radius:.25rem;font-size:.9em}
+  pre{background:var(--panel);border:1px solid var(--hair);border-radius:12px;
+    padding:16px 18px;overflow-x:auto}
+  pre code{background:none;padding:0}
+  table{width:100%;border-collapse:collapse;margin:0 0 16px;font-size:15px;display:block;overflow-x:auto}
+  th,td{text-align:left;padding:8px 10px;border-bottom:1px solid var(--hair);vertical-align:top}
+  th{font-weight:650;color:var(--muted);font-size:13px;text-transform:uppercase;letter-spacing:.04em}
+  blockquote{margin:0 0 16px;padding:12px 16px;background:var(--panel);
+    border-left:3px solid var(--accent);border-radius:0 8px 8px 0}
+  hr{border:none;border-top:1px solid var(--hair);margin:36px 0}
+  footer{margin-top:56px;padding-top:20px;border-top:1px solid var(--hair);
+    color:var(--muted);font-size:14px}
+  @media (max-width:480px){
+    body{font-size:16px} h1{font-size:28px} h2{font-size:20px} .wrap{padding:40px 20px 72px}
+  }
+</style>
+</head>
+<body>
+<div class="accent-bar"></div>
+<div class="wrap">
+  <header>
+    <p class="mark">Aislely</p>
+    <h1>User Guide</h1>
+    <p class="lede">Everything the app does, and how to get at it.</p>
+  </header>
+  <main>
+<p>Aislely sorts your shopping list into the aisle order of whichever store you&#39;re
+standing in, so you shop start to finish in one pass. Everything runs on your
+device: no account, no server, no tracking, and it works with no signal.</p>
+<ul>
+<li><a href="#the-six-tabs">The six tabs</a></li>
+<li><a href="#getting-started">Getting started</a></li>
+<li><a href="#building-your-list-plan">Building your list (Plan)</a></li>
+<li><a href="#adding-by-voice">Adding by voice</a></li>
+<li><a href="#shopping-shop">Shopping (Shop)</a></li>
+<li><a href="#money-the-running-total-and-currency">Money: the running total and currency</a></li>
+<li><a href="#finishing-a-trip">Finishing a trip</a></li>
+<li><a href="#loyalty-cards-and-checkout">Loyalty cards and checkout</a></li>
+<li><a href="#purchase-history">Purchase history</a></li>
+<li><a href="#stores-and-aisle-order-layout">Stores and aisle order (Layout)</a></li>
+<li><a href="#categories-schedule-spend">Categories, schedule, spend</a></li>
+<li><a href="#sharing-a-list">Sharing a list</a></li>
+<li><a href="#free-vs-pro">Free vs Pro</a></li>
+<li><a href="#privacy">Privacy</a></li>
+<li><a href="#troubleshooting">Troubleshooting</a></li>
+</ul>
+<hr>
+<h2>The six tabs</h2>
+<table>
+<thead>
+<tr>
+<th>Tab</th>
+<th>What it&#39;s for</th>
+</tr>
+</thead>
+<tbody><tr>
+<td><strong>Plan</strong></td>
+<td>Build the list: add items, set quantities, choose which stores they belong to</td>
+</tr>
+<tr>
+<td><strong>Shop</strong></td>
+<td>Check items off in aisle order, watch the running total, finish the trip</td>
+</tr>
+<tr>
+<td><strong>Layout</strong></td>
+<td>Set this store&#39;s aisle order, colour, currency, and loyalty card</td>
+</tr>
+<tr>
+<td><strong>Cats</strong></td>
+<td>Manage categories (the aisles themselves)</td>
+</tr>
+<tr>
+<td><strong>When</strong></td>
+<td>Your shopping day and calendar reminders</td>
+</tr>
+<tr>
+<td><strong>Spend</strong></td>
+<td>Where your money goes (Pro)</td>
+</tr>
+</tbody></table>
+<p>Above the tabs is the <strong>store row</strong>. Tapping a store does two things at once: it
+filters the list to the items meant for that store, and reorders everything into
+that store&#39;s aisle layout. Aislely reopens on whichever store you last picked.</p>
+<hr>
+<h2>Getting started</h2>
+<ol>
+<li>Rename the sample stores on the <strong>Layout</strong> tab to your real ones (&quot;Shoprite&quot;,
+&quot;Costco&quot;), and add any others with <strong>+ Add store</strong>.</li>
+<li>On <strong>Layout</strong>, drag the categories into the order you actually walk that
+store. Do this once per store — it&#39;s what makes the whole app work.</li>
+<li>Start adding items on <strong>Plan</strong>.</li>
+</ol>
+<p>Your currency is picked from your phone&#39;s region automatically. You don&#39;t need
+to set anything up for it.</p>
+<hr>
+<h2>Building your list (Plan)</h2>
+<p>Type an item and press <strong>Add</strong>. Aislely suggests a category as you type; change
+it with the dropdown if the guess is wrong.</p>
+<p><strong>Quantities</strong> are free-form text — &quot;2&quot;, &quot;1 lb&quot;, &quot;1 dozen&quot;. Adding an item that&#39;s
+already on the list offers to combine the quantities instead of creating a
+duplicate.</p>
+<p><strong>Send to</strong> decides which stores an item belongs to. It starts on the store you
+have selected, so items land where you&#39;re shopping without extra taps. Tap any
+store to add or remove it, or <strong>All stores</strong> to send it everywhere. After each
+add it resets to the selected store, so one unusual item never changes the rest.</p>
+<p><strong>The star</strong> marks an item as a staple — something you buy routinely. Staples
+always carry over when you finish a trip.</p>
+<p>If you&#39;ve bought something before, a line under the box tells you when you last
+bought it and what you paid.</p>
+<hr>
+<h2>Adding by voice</h2>
+<p>Tap the microphone beside the add box and speak. Everything is shown for review
+before it&#39;s saved — nothing happens behind your back. Tap the <strong>?</strong> next to the
+mic for the full list of phrases.</p>
+<table>
+<thead>
+<tr>
+<th>Say</th>
+<th>What happens</th>
+</tr>
+</thead>
+<tbody><tr>
+<td>&quot;Add milk&quot; / &quot;Add eggs, milk, and bread&quot;</td>
+<td>Adds one or several items</td>
+</tr>
+<tr>
+<td>&quot;Add two gallons of milk&quot;</td>
+<td>Adds milk with quantity &quot;2 gallons&quot;</td>
+</tr>
+<tr>
+<td>&quot;Add milk and eggs to Costco&quot;</td>
+<td>Adds them to that store&#39;s list</td>
+</tr>
+<tr>
+<td>&quot;Set milk to 3&quot;</td>
+<td>Changes a quantity</td>
+</tr>
+<tr>
+<td>&quot;Remove milk&quot;</td>
+<td>Removes it, after you confirm</td>
+</tr>
+<tr>
+<td>&quot;Remove milk from Costco&quot;</td>
+<td>Takes it off that store, keeps it on your others</td>
+</tr>
+<tr>
+<td>&quot;Clear my Costco list&quot;</td>
+<td>Clears that store, with an <strong>Undo</strong> afterwards</td>
+</tr>
+</tbody></table>
+<p>Tips: separate items with commas, say the store last, and add names containing
+&quot;and&quot; (like &quot;mac and cheese&quot;) on their own so they don&#39;t get split.</p>
+<hr>
+<h2>Shopping (Shop)</h2>
+<p>The Shop tab is a stripped-down view for the aisle: items in your store&#39;s order,
+one tap to check each off. Aislely nudges you if you&#39;re about to leave an aisle
+with something still on it.</p>
+<p><strong>Checking an item off is always one tap and never requires a price.</strong></p>
+<hr>
+<h2>Money: the running total and currency</h2>
+<h3>The running total</h3>
+<p>At the top of Shop you&#39;ll see something like:</p>
+<pre><code>≈ $84.20
+9 confirmed, 3 estimated, 2 unpriced
+</code></pre>
+<p>Its job is to tell you roughly where you stand — &quot;am I at $60 or $160&quot; — before
+you reach the register.</p>
+<ul>
+<li><strong>Estimated</strong> items are priced from what you last paid <em>at that store</em>. This
+works from your first trip onward; you don&#39;t have to enter anything.</li>
+<li><strong>Confirmed</strong> items are ones you priced or confirmed on this trip.</li>
+<li><strong>Unpriced</strong> items have no price yet and add nothing to the total.</li>
+</ul>
+<p>Tap the total to see every item and where its number came from. The <code>≈</code>
+disappears only when every item has been confirmed today.</p>
+<h3>Entering prices</h3>
+<p>Beside each item is its price:</p>
+<ul>
+<li><strong>Tap it</strong> to confirm the estimate is right.</li>
+<li><strong>Press and hold</strong> to type the real price.</li>
+</ul>
+<p>The keypad works like a card terminal — type <code>4</code> <code>9</code> <code>9</code> for <strong>$4.99</strong>, with no
+decimal point to hunt for. In a currency with no decimals (yen, won), <code>499</code>
+simply means 499.</p>
+<h3>Things not on your list</h3>
+<p>Use the quick-add box at the top of Shop: type the name, optionally the price,
+and it goes straight into the cart as bought. Impulse buys are exactly what makes
+a running total drift, so this keeps it honest.</p>
+<h3>Currency</h3>
+<p>Aislely uses your phone&#39;s region to pick a currency, and every amount it saves
+remembers which currency it was in — so your history can never be silently
+rewritten.</p>
+<p>To change it: <strong>Layout → Currency</strong>, then tap the amount shown. Search by code,
+name, or symbol (<code>EUR</code>, <code>euro</code>, <code>€</code>). If you already have trips recorded, Aislely
+offers to <strong>relabel</strong> them — it corrects the label only, and never converts
+amounts or uses exchange rates.</p>
+<p>Shopping in more than one currency? Once a second currency is in play, each store
+can have its own.</p>
+<hr>
+<h2>Finishing a trip</h2>
+<p>Tap <strong>Finish trip</strong> in Shop.</p>
+<ol>
+<li>If the store has a loyalty card, the <strong>Checkout</strong> screen appears first — card
+at the top for the start of the transaction, total below for the end.</li>
+<li>The total is pre-filled from your running total. Type over it with the receipt
+figure if you like, or leave it blank — the trip still logs.</li>
+<li>If you left anything unchecked, Aislely asks what to do: <strong>keep them for next
+time</strong> (out of stock) or <strong>clear them too</strong> (changed your mind).</li>
+<li>Pro users can enter per-item prices for the spend dashboard.</li>
+</ol>
+<p>Then the list resets itself:</p>
+<ul>
+<li>Items you <strong>bought</strong> are removed — you have them now.</li>
+<li><strong>Staples</strong> always stay, ready for next time.</li>
+<li><strong>Skipped</strong> items follow whichever choice you made.</li>
+</ul>
+<hr>
+<h2>Loyalty cards and checkout</h2>
+<p><em>(Pro)</em> Keep a store&#39;s loyalty card in the app instead of your wallet.</p>
+<ol>
+<li><strong>Layout → Add loyalty card</strong>, then scan the barcode on the physical card. The
+camera captures both the number and its barcode type, which is what makes it
+scan correctly at the register.</li>
+<li>If scanning won&#39;t work, choose <strong>Enter manually</strong>, type the number, and pick
+the barcode picture that matches your card.</li>
+<li>Check the review screen against the real card, then save.</li>
+</ol>
+<p><strong>Show card</strong> on the Layout tab displays it any time — useful for an unplanned
+trip. The screen stays awake while it&#39;s open.</p>
+<p>Your card never leaves the device: it&#39;s excluded from shared lists and exports.</p>
+<hr>
+<h2>Purchase history</h2>
+<p>Every item you buy is recorded on your device. On <strong>Shop</strong>, tap <strong>Search
+history</strong>:</p>
+<ul>
+<li>Search an item to see when you last bought it, at which store, what you paid,
+and every past purchase of it.</li>
+<li>Minor typos are fine — &quot;bannana&quot; still finds bananas.</li>
+<li>To browse instead, use <strong>Jump to…</strong> for any past month, or <strong>Show more</strong> for
+older trips.</li>
+</ul>
+<p>Nothing is ever archived or deleted.</p>
+<hr>
+<h2>Stores and aisle order (Layout)</h2>
+<ul>
+<li><strong>Rename or delete</strong> a store at the top. Deleting asks first, and items pinned
+only to that store go back to all stores — nothing is lost.</li>
+<li><strong>Aisle order</strong>: drag a category by its handle, or use the arrows. Saved per
+store.</li>
+<li>Categories you remove from a store still appear on your list under <strong>Other</strong>.</li>
+<li><strong>Store colour</strong> tints the background so a glance tells you which list you&#39;re
+on.</li>
+</ul>
+<p>Reorder the store row itself by long-pressing a store and dragging.</p>
+<hr>
+<h2>Categories, schedule, spend</h2>
+<ul>
+<li><strong>Cats</strong> — add, rename, recolour, or remove categories. Removing one moves its
+items to &quot;Other&quot;; they&#39;re never deleted.</li>
+<li><strong>When</strong> — set your shopping day, then export a calendar reminder. It&#39;s a
+standard <code>.ics</code> file handled by your own calendar app; there&#39;s no push server.</li>
+<li><strong>Spend</strong> <em>(Pro)</em> — totals, spend by category, most-bought items, and CSV
+export.</li>
+</ul>
+<hr>
+<h2>Sharing a list</h2>
+<p><strong>Plan → Share list</strong> creates a file you send however you like. The other person
+taps <strong>Import</strong> and picks it.</p>
+<p>The list keeps its store grouping: stores they already have are matched by name,
+and any they don&#39;t have are offered for them to create. Declining one just skips
+those items. Loyalty cards are never included.</p>
+<hr>
+<h2>Free vs Pro</h2>
+<p><strong>Free</strong> — aisle-order sorting, unlimited stores, per-item store scope, shopping
+mode, the running total and price entry, trip totals, purchase-history search,
+voice, list sharing, and calendar reminders.</p>
+<p><strong>Pro</strong> (one payment, no subscription) — scan-to-add, the spend dashboard, price
+history and comparison, CSV export, recipes, templates, staples, item photos,
+loyalty cards, learned categories, and restock predictions.</p>
+<p>Searching your own purchase history is free and always will be — it&#39;s your data.</p>
+<hr>
+<h2>Privacy</h2>
+<p>Everything lives on your device. There&#39;s no account and no server holding your
+information, so there is nothing to leak, sell, or subpoena.</p>
+<p>Camera and microphone are used only when you choose to scan, photograph, or
+dictate, and they&#39;re processed on the device. Two optional features touch the
+network: importing a recipe from a link, and voice dictation (your phone&#39;s own
+speech service does the transcription). Everything else works offline.</p>
+<p>Full policy: <a href="https://oguevar8-commits.github.io/aislely-privacy/">https://oguevar8-commits.github.io/aislely-privacy/</a></p>
+<hr>
+<h2>Troubleshooting</h2>
+<p><strong>An item vanished from my list.</strong> It&#39;s probably pinned to a different store.
+Switch stores, or look for the &quot;N items are only on other stores&#39; lists&quot; note.</p>
+<p><strong>The running total looks wrong.</strong> Check the line under it — if most items are
+<em>estimated</em>, it&#39;s working from old prices. Confirm a few and it&#39;ll sharpen up.</p>
+<p><strong>The mic button isn&#39;t there.</strong> Voice needs a browser or device that supports
+speech input; where it isn&#39;t available the button is hidden rather than broken.</p>
+<p><strong>A recipe link won&#39;t import.</strong> Not every site publishes recipe data. Paste the
+ingredients instead — that always works and needs no connection.</p>
+<p><strong>My card says its barcode type isn&#39;t supported.</strong> A few older symbologies can&#39;t
+be drawn accurately, and showing a wrong barcode at a register is worse than
+showing none. Use the physical card at that store.</p>
+<p><strong>I need to start over.</strong> Clearing the app&#39;s data removes everything, permanently
+— there&#39;s no cloud copy. Export a CSV or share your list first if you want a
+record.</p>
+
+  </main>
+  <footer>
+    <p><a href="../">Privacy policy</a> · Aislely is published by Odylon Guevarra.</p>
+  </footer>
+</div>
+</body>
+</html>
